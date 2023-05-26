@@ -1,5 +1,6 @@
-package com.rpc.client;
+package com.rpc.socket.client;
 
+import com.rpc.RpcClient;
 import com.rpc.entity.RpcRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,14 +10,20 @@ import java.net.Socket;
 
 
 /**
- * 远程方法调用的消费者（客户端）
+ * Socket 远程方法调用的消费者（客户端）
  * @author dell
  */
 
-public class RpcClient {
-    private static final Logger logger = LoggerFactory.getLogger(RpcClient.class);
+public class SocketClient implements RpcClient {
+    private static final Logger logger = LoggerFactory.getLogger(SocketClient.class);
 
-    public Object sendRequest(RpcRequest rpcRequest,String host ,int port){
+    private final String host;
+    private final int port;
+    public SocketClient(String host ,int port){
+        this.host = host;
+        this.port = port;
+    }
+    public Object sendRequest(RpcRequest rpcRequest){
         try (Socket socket = new Socket(host, port)){
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(socket.getOutputStream());
             ObjectInputStream objectInputStream = new ObjectInputStream(socket.getInputStream());
