@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bba94fdd-685a-4a80-ad27-4e573f7a8e06" name="Changes" comment="注册多个服务">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="bba94fdd-685a-4a80-ad27-4e573f7a8e06" name="Changes" comment="重新初始化">
+      <change afterPath="$PROJECT_DIR$/rpc-api/src/main/java/com/rpc/api/HelloObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-api/src/main/java/com/rpc/api/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-common/src/main/java/com/rpc/entity/RpcRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-common/src/main/java/com/rpc/entity/RpcResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-common/src/main/java/com/rpc/enumeration/ResponseCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-server/src/main/java/com/test/HelloServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-server/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +31,20 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;zhoujie0420&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="cd712353-1c76-43e7-8722-472697bbb761" />
+        <option name="url" value="https://github.com/zhoujie0420/My-RPC.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/rpc-common/src/main/java/com/rpc/RpcResponse.java" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -40,11 +60,13 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2QH3BPg8jfdr81bsWc9tABPlYMX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -64,7 +86,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -75,64 +97,6 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.test" />
     </key>
-  </component>
-  <component name="RunManager" selected="Application.NettyTestServer">
-    <configuration name="NettyTestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.NettyTestClient" />
-      <module name="test-client" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NettyTestServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.NettyTestServer" />
-      <module name="test-server" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SocketTestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.SocketTestClient" />
-      <module name="test-client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SocketTestServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.SocketTestServer" />
-      <module name="test-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.TestServer" />
-      <module name="test-server" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.NettyTestServer" />
-        <item itemvalue="Application.SocketTestServer" />
-        <item itemvalue="Application.SocketTestClient" />
-        <item itemvalue="Application.NettyTestClient" />
-        <item itemvalue="Application.TestServer" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -150,7 +114,41 @@
       <workItem from="1690421023171" duration="217000" />
       <workItem from="1690525437113" duration="2482000" />
       <workItem from="1690791384972" duration="79000" />
+      <workItem from="1690791853099" duration="740000" />
     </task>
+    <task id="LOCAL-00001" summary="重新初始化">
+      <option name="closed" value="true" />
+      <created>1690792169075</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690792169075</updated>
+    </task>
+    <task id="LOCAL-00002" summary="重新初始化">
+      <option name="closed" value="true" />
+      <created>1690792232947</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690792232947</updated>
+    </task>
+    <task id="LOCAL-00003" summary="重新初始化">
+      <option name="closed" value="true" />
+      <created>1690792259086</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690792259086</updated>
+    </task>
+    <task id="LOCAL-00004" summary="重新初始化">
+      <option name="closed" value="true" />
+      <created>1690792297828</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690792297828</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +157,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="socket + 动态代理 完成单一服务的启动" />
     <MESSAGE value="注册多个服务" />
-    <option name="LAST_COMMIT_MESSAGE" value="注册多个服务" />
+    <MESSAGE value="重新初始化" />
+    <option name="LAST_COMMIT_MESSAGE" value="重新初始化" />
   </component>
 </project>
